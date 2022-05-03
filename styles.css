@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: snow;
+}
+
+nav{
+    display: none;
+}
+
+.nav-icon-heading{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+nav button{
+    text-align: center;
+    background: transparent;
+    font-size: 1.25rem;
+    border: none;
+    border-bottom: 1px solid #25D1E8;
+    padding: 0.5rem;
+    padding-bottom: 0.1rem;
+}
+
+nav button:hover{
+    border-bottom: 1px solid black;
+    transition-duration: 0.25s;
+}
+
+nav button:focus{
+    color: white;
+}
+.burger{
+    display: none;
+}
+
+.burger div{
+    height: 2px;
+    background-color: black;
+    width: 20px;
+    margin-bottom: 2px;
+    margin-right: 1rem;
+}
+
+.heading{
+    background-color: #25D1E8;
+    margin: 0;
+    padding: 5rem;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.line1{
+    width: 18px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 22.5rem;
+    left:10px; 
+    z-index: -1;
+}
+
+.line2{
+    height: 3px;
+    background-color: black;
+    width: 77%;
+    position: absolute;
+    top: 22.5rem;
+    left: 21rem;
+    z-index: -1;
+}
+
+/* .heading p{
+    margin-left: 14rem;
+} */
+
+.heading p{
+    font-size: 1rem;
+    letter-spacing: 0px;
+}
+
+.restaurant-main-heading{
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+}
+
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 2rem;
+}
+  
+.container{
+    padding: 10px;
+    margin-bottom: 1rem;
+    /* border: 1px solid black; */
+    border-radius: 5px; 
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.25rem lightgrey;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container:hover{
+    background-color: #80bdc5;
+    transition-duration: 250ms; 
+    font-size: 150%;
+    color: white;
+    box-shadow: 0.1rem 0.75rem 0.5rem 0.25rem rgb(200,200,200);
+}
+
+.restaurant-heading{
+    font-size: 1.25rem;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.footer {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    padding: 0.5rem;
+    background-color: #CF8D84;
+    /* position: sticky;
+    bottom: 0; */
+    color: white;
+    text-align: center;
+}
+
+.button-container button {
+    background: transparent;
+    padding: 0.75rem;
+    text-align: center;
+    font-family: Century Gothic;
+    border: 0.1px solid black;
+    border-radius: 3px;
+    font-size: 1rem;
+    flex-direction: row;
+}
+
+.button-container button:hover {
+    border-radius: 10px;
+    transition-duration: 250ms;
+    color: white;
+    border-color: white;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.fooder-description-container{
+    padding: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.25rem lightgrey;
+    text-align: center;
+    color: black;
+
+    background-image: url("https://wallpaperaccess.com/full/1976837.png");
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position: 0px 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-card{
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0.1rem 0.2rem 0.5rem 0.25rem lightgrey;
+}
+
+.form-card:hover {
+    box-shadow: 0.1rem 0.5rem 0.5rem 0.5rem rgb(200,200,200);
+    transition-duration: 250ms;
+}
+
+.form-card-heading{
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.form-container {
+    /*background-color: snow; */
+    border: 1px solid black; 
+    /* background-color: #93E9F5; */
+    border-radius: 5px;
+    padding: 1rem;
+    margin:auto;
+    width: 30%; 
+    text-align: center;
+}
+
+.form-inputs {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-inputs label {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.form-inputs input {
+    font-family: Century Gothic;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid grey;
+    width: 50%;
+    max-width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.form-button {
+    border-radius: 5px;
+    background-color: snow;
+    padding: 0.5rem;
+}
+
+.form-container button:hover{
+    border-radius: 10px;
+    transition-duration: 0.25s;
+}
+
+.fooder-description-container:hover {
+    color: white;
+    transition-duration: 500ms;
+    box-shadow: 0.1rem 0.75rem 0.5rem 0.25rem rgb(200,200,200);
+}
+
+.contact-container{
+    border: 1px solid white;
+    padding: 1rem;
+    font-size: 1rem;
+    letter-spacing: normal;
+
+}
+
+@media screen and (max-width: 1050px){
+
+    .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: 1rem 2rem;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    .line2{
+        width:62.5%;
+    }
+}
+
+@media screen and (max-width:764px){
+
+    .nav-active{
+        display: block;
+        background-color: #25D1E8;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0rem;
+        width: 100%;
+        animation: opac 0.25s ease-in;
+    }
+    
+    @keyframes opac{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        height: 92vh;
+        width: 35%;
+        background-color: #25D1E8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-links button{
+        opacity: 0;
+        margin: 0;
+    }
+
+
+    .grid {
+        display: grid;
+        gap: 0rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        width: 100%;
+    }
+
+    .restaurant-main-heading{
+        text-align: center;
+        margin:0;
+        margin-bottom: 1rem;
+    }
+
+    .line1{
+        width: 16%;
+    }
+    .line2{
+        width: 16%;
+        left: 24.75rem;
+    }
+
+    .container{
+        border-radius: 1rem; 
+        width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container:hover{
+        background-color: #80bdc5;
+        transition-duration: 250ms; 
+        font-size: 150%;
+        color: white;
+        box-shadow: 0.5rem 0.6rem 10px rgba(0,0,0, 0.31);
+    }
+    
+
+    .button-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .button-container button {
+        background: transparent;
+        padding: 0.5rem;
+        text-align: center;
+        font-family: Century Gothic;
+        border: 0.1px solid black;
+        border-radius: 3px;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .form-card{
+        display: none;
+    }
+
+    .fooder-description-container{
+        padding: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-size: 1rem;
+        min-height: 55vh;
+        background-position: -350px 180px;
+    }
+
+    .footer{
+        font-size: 1rem;
+        letter-spacing: 3px;
+        padding: 1rem;
+    }    
+}
+
+.nav-slide-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translate(25px, 5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+.burger-click .burger-line1{
+    transform: rotate(-45deg) translate(-3px, 3px);
+    transition: transform 0.3s;
+}
+
+.burger-click .burger-line2{
+    opacity: 0;
+}
+
+.burger-click .burger-line3{
+    transform: rotate(45deg) translate(-3px, -3px);
+    transition: transform 0.3s;
+}
